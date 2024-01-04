@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_891dfa9a2a8499f3b95f66ef1f07c979 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_891dfa9a2a8499f3b95f66ef1f07c979" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_891dfa9a2a8499f3b95f66ef1f07c979 = L.map(
+                "map_891dfa9a2a8499f3b95f66ef1f07c979",
+                {
+                    center: [40.694, -73.985],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0727bee5572051e5cb5b931c35e0b8ae = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_0727bee5572051e5cb5b931c35e0b8ae.addTo(map_891dfa9a2a8499f3b95f66ef1f07c979);
+        
+    
+            var marker_8ed9f157274276746618f564afdcdd43 = L.marker(
+                [40.694, -73.985],
+                {}
+            ).addTo(map_891dfa9a2a8499f3b95f66ef1f07c979);
+        
+    
+            var icon_c85cab685cc7189e16cd0aa8f8228042 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8ed9f157274276746618f564afdcdd43.setIcon(icon_c85cab685cc7189e16cd0aa8f8228042);
+        
+    
+        var popup_ea29c7adee57e19094475207cd3e667b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b66a517b2c8d9d3fcd9a87c0c0769647 = $(`<div id="html_b66a517b2c8d9d3fcd9a87c0c0769647" style="width: 100.0%; height: 100.0%;">Your Location</div>`)[0];
+                popup_ea29c7adee57e19094475207cd3e667b.setContent(html_b66a517b2c8d9d3fcd9a87c0c0769647);
+            
+        
+
+        marker_8ed9f157274276746618f564afdcdd43.bindPopup(popup_ea29c7adee57e19094475207cd3e667b)
+        ;
+
+        
+    
+    
+            var marker_fffee58528bce229ece910d5f91baaad = L.marker(
+                [40.70037867, -73.99548059],
+                {}
+            ).addTo(map_891dfa9a2a8499f3b95f66ef1f07c979);
+        
+    
+            var icon_666705463514a13b4175381eef6c6a30 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_fffee58528bce229ece910d5f91baaad.setIcon(icon_666705463514a13b4175381eef6c6a30);
+        
+    
+        var popup_f658f9e8b92b5bc92168aef4c234651f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_350be13077dfc66e3ecc3e1ff9b33929 = $(`<div id="html_350be13077dfc66e3ecc3e1ff9b33929" style="width: 100.0%; height: 100.0%;">Station 1: Columbia Heights & Cranberry St</div>`)[0];
+                popup_f658f9e8b92b5bc92168aef4c234651f.setContent(html_350be13077dfc66e3ecc3e1ff9b33929);
+            
+        
+
+        marker_fffee58528bce229ece910d5f91baaad.bindPopup(popup_f658f9e8b92b5bc92168aef4c234651f)
+        ;
+
+        
+    
+    
+            marker_fffee58528bce229ece910d5f91baaad.bindTooltip(
+                `<div>
+                     Station 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7e037811782481a24000f58bd2e2146a = L.marker(
+                [40.69985, -73.97141],
+                {}
+            ).addTo(map_891dfa9a2a8499f3b95f66ef1f07c979);
+        
+    
+            var icon_9886da3f80dac833d051bb448249823d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7e037811782481a24000f58bd2e2146a.setIcon(icon_9886da3f80dac833d051bb448249823d);
+        
+    
+        var popup_d47854869b67ef501e751f6159dfb42c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0487fd735d6fb8864c12a99e954da4cd = $(`<div id="html_0487fd735d6fb8864c12a99e954da4cd" style="width: 100.0%; height: 100.0%;">Station 2: Dock 72 Way & Market St</div>`)[0];
+                popup_d47854869b67ef501e751f6159dfb42c.setContent(html_0487fd735d6fb8864c12a99e954da4cd);
+            
+        
+
+        marker_7e037811782481a24000f58bd2e2146a.bindPopup(popup_d47854869b67ef501e751f6159dfb42c)
+        ;
+
+        
+    
+    
+            marker_7e037811782481a24000f58bd2e2146a.bindTooltip(
+                `<div>
+                     Station 2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_72aba564cf249ca7b83ee0b83b0ba5a6 = L.marker(
+                [40.68940747, -73.96885458],
+                {}
+            ).addTo(map_891dfa9a2a8499f3b95f66ef1f07c979);
+        
+    
+            var icon_25bdef3d71e266d8d94d88dd77c3f0fa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_72aba564cf249ca7b83ee0b83b0ba5a6.setIcon(icon_25bdef3d71e266d8d94d88dd77c3f0fa);
+        
+    
+        var popup_7face0cef4a1cd6f979be2364bddec52 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7cced5b71325bcc79de243b867d4b3f8 = $(`<div id="html_7cced5b71325bcc79de243b867d4b3f8" style="width: 100.0%; height: 100.0%;">Station 3: DeKalb Ave & Vanderbilt Ave</div>`)[0];
+                popup_7face0cef4a1cd6f979be2364bddec52.setContent(html_7cced5b71325bcc79de243b867d4b3f8);
+            
+        
+
+        marker_72aba564cf249ca7b83ee0b83b0ba5a6.bindPopup(popup_7face0cef4a1cd6f979be2364bddec52)
+        ;
+
+        
+    
+    
+            marker_72aba564cf249ca7b83ee0b83b0ba5a6.bindTooltip(
+                `<div>
+                     Station 3
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fc6f24efeba01dfa05fa6044b2a053f1 = L.marker(
+                [40.677027, -73.9865],
+                {}
+            ).addTo(map_891dfa9a2a8499f3b95f66ef1f07c979);
+        
+    
+            var icon_12606e2be30d33c983237879521b1167 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_fc6f24efeba01dfa05fa6044b2a053f1.setIcon(icon_12606e2be30d33c983237879521b1167);
+        
+    
+        var popup_ad054be0ea7ec0d20c665c5c8aa76050 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1017ce7d8c732a8e2b91e443aee8a0bd = $(`<div id="html_1017ce7d8c732a8e2b91e443aee8a0bd" style="width: 100.0%; height: 100.0%;">Station 4: 3 Ave & Carroll St</div>`)[0];
+                popup_ad054be0ea7ec0d20c665c5c8aa76050.setContent(html_1017ce7d8c732a8e2b91e443aee8a0bd);
+            
+        
+
+        marker_fc6f24efeba01dfa05fa6044b2a053f1.bindPopup(popup_ad054be0ea7ec0d20c665c5c8aa76050)
+        ;
+
+        
+    
+    
+            marker_fc6f24efeba01dfa05fa6044b2a053f1.bindTooltip(
+                `<div>
+                     Station 4
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_24c429bbb1b9ae58b4b3f290f4273894 = L.marker(
+                [40.6794388, -73.9680438],
+                {}
+            ).addTo(map_891dfa9a2a8499f3b95f66ef1f07c979);
+        
+    
+            var icon_b3867afc717a3739ab87faaa1505f65b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_24c429bbb1b9ae58b4b3f290f4273894.setIcon(icon_b3867afc717a3739ab87faaa1505f65b);
+        
+    
+        var popup_233f36420b39a89ac55b64300b54e860 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b6daecf7c2d58a5ce6c6bae5ac3bff51 = $(`<div id="html_b6daecf7c2d58a5ce6c6bae5ac3bff51" style="width: 100.0%; height: 100.0%;">Station 5: Bergen St & Vanderbilt Ave</div>`)[0];
+                popup_233f36420b39a89ac55b64300b54e860.setContent(html_b6daecf7c2d58a5ce6c6bae5ac3bff51);
+            
+        
+
+        marker_24c429bbb1b9ae58b4b3f290f4273894.bindPopup(popup_233f36420b39a89ac55b64300b54e860)
+        ;
+
+        
+    
+    
+            marker_24c429bbb1b9ae58b4b3f290f4273894.bindTooltip(
+                `<div>
+                     Station 5
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>

@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_fdd7dd0df6e4ecc1c7ded1da3d9ac6ff {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_fdd7dd0df6e4ecc1c7ded1da3d9ac6ff" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_fdd7dd0df6e4ecc1c7ded1da3d9ac6ff = L.map(
+                "map_fdd7dd0df6e4ecc1c7ded1da3d9ac6ff",
+                {
+                    center: [40.694, -73.985],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_543d88f40a73bcaa23a8b3ef3f82ac11 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_543d88f40a73bcaa23a8b3ef3f82ac11.addTo(map_fdd7dd0df6e4ecc1c7ded1da3d9ac6ff);
+        
+    
+            var marker_521899a186aa5aac96c95b7f0671287a = L.marker(
+                [40.694, -73.985],
+                {}
+            ).addTo(map_fdd7dd0df6e4ecc1c7ded1da3d9ac6ff);
+        
+    
+            var icon_2d4b5c666b02355d6592238aef6c4e76 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_521899a186aa5aac96c95b7f0671287a.setIcon(icon_2d4b5c666b02355d6592238aef6c4e76);
+        
+    
+        var popup_4161e69c50be0d4bdb0b98f432a78d28 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e5c51d9ebe57e8de0be2eb6b9eed6c2a = $(`<div id="html_e5c51d9ebe57e8de0be2eb6b9eed6c2a" style="width: 100.0%; height: 100.0%;">Your Location</div>`)[0];
+                popup_4161e69c50be0d4bdb0b98f432a78d28.setContent(html_e5c51d9ebe57e8de0be2eb6b9eed6c2a);
+            
+        
+
+        marker_521899a186aa5aac96c95b7f0671287a.bindPopup(popup_4161e69c50be0d4bdb0b98f432a78d28)
+        ;
+
+        
+    
+    
+            var marker_587ea31501fc752acfe030c53b1a5cd2 = L.marker(
+                [40.68917, -73.9886],
+                {}
+            ).addTo(map_fdd7dd0df6e4ecc1c7ded1da3d9ac6ff);
+        
+    
+            var icon_5b4de30dace1d556e4f17df78f5d5083 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_587ea31501fc752acfe030c53b1a5cd2.setIcon(icon_5b4de30dace1d556e4f17df78f5d5083);
+        
+    
+        var popup_cb5ae9a9b5a2a1bd346649b236bb138c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_94acca1fe08ee65fea6fba29387cc084 = $(`<div id="html_94acca1fe08ee65fea6fba29387cc084" style="width: 100.0%; height: 100.0%;">discount: 1: State St & Smith St</div>`)[0];
+                popup_cb5ae9a9b5a2a1bd346649b236bb138c.setContent(html_94acca1fe08ee65fea6fba29387cc084);
+            
+        
+
+        marker_587ea31501fc752acfe030c53b1a5cd2.bindPopup(popup_cb5ae9a9b5a2a1bd346649b236bb138c)
+        ;
+
+        
+    
+    
+            marker_587ea31501fc752acfe030c53b1a5cd2.bindTooltip(
+                `<div>
+                     Discount: 17.75 %
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d4d301b19d83073b5136b23ff23fa0d2 = L.marker(
+                [40.6886263, -73.9851911],
+                {}
+            ).addTo(map_fdd7dd0df6e4ecc1c7ded1da3d9ac6ff);
+        
+    
+            var icon_4b6a9f451964019f95b56ca8f22bb064 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d4d301b19d83073b5136b23ff23fa0d2.setIcon(icon_4b6a9f451964019f95b56ca8f22bb064);
+        
+    
+        var popup_c59f82eec1966ed934f84c511a00c137 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_98558313f49d7c3fc22a6dfeb9dee152 = $(`<div id="html_98558313f49d7c3fc22a6dfeb9dee152" style="width: 100.0%; height: 100.0%;">discount: 2: Schermerhorn St & Hoyt St</div>`)[0];
+                popup_c59f82eec1966ed934f84c511a00c137.setContent(html_98558313f49d7c3fc22a6dfeb9dee152);
+            
+        
+
+        marker_d4d301b19d83073b5136b23ff23fa0d2.bindPopup(popup_c59f82eec1966ed934f84c511a00c137)
+        ;
+
+        
+    
+    
+            marker_d4d301b19d83073b5136b23ff23fa0d2.bindTooltip(
+                `<div>
+                     Discount: 17.42 %
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d0ac92285d247bd718eec5d914c895af = L.marker(
+                [40.693534, -73.981909],
+                {}
+            ).addTo(map_fdd7dd0df6e4ecc1c7ded1da3d9ac6ff);
+        
+    
+            var icon_d6b99f3e1c85440d8ffc1d1d27b3eb23 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d0ac92285d247bd718eec5d914c895af.setIcon(icon_d6b99f3e1c85440d8ffc1d1d27b3eb23);
+        
+    
+        var popup_c562fdc1b366b5244ca4d36ace98326b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_53a5bad4061a5fa19eab153ae5609ac0 = $(`<div id="html_53a5bad4061a5fa19eab153ae5609ac0" style="width: 100.0%; height: 100.0%;">discount: 3: Myrtle Ave & Fleet Pl</div>`)[0];
+                popup_c562fdc1b366b5244ca4d36ace98326b.setContent(html_53a5bad4061a5fa19eab153ae5609ac0);
+            
+        
+
+        marker_d0ac92285d247bd718eec5d914c895af.bindPopup(popup_c562fdc1b366b5244ca4d36ace98326b)
+        ;
+
+        
+    
+    
+            marker_d0ac92285d247bd718eec5d914c895af.bindTooltip(
+                `<div>
+                     Discount: 13.01 %
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ee11cbecf303189b6faad83f5a449925 = L.marker(
+                [40.690065, -73.978776],
+                {}
+            ).addTo(map_fdd7dd0df6e4ecc1c7ded1da3d9ac6ff);
+        
+    
+            var icon_ff778da284170516874ac55007dc8f26 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ee11cbecf303189b6faad83f5a449925.setIcon(icon_ff778da284170516874ac55007dc8f26);
+        
+    
+        var popup_4895436cffbef0dc770be68dba795718 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5a1e75f15ba67dd8b745f1c9ab1ff17e = $(`<div id="html_5a1e75f15ba67dd8b745f1c9ab1ff17e" style="width: 100.0%; height: 100.0%;">discount: 4: Ashland Pl & Dekalb Ave</div>`)[0];
+                popup_4895436cffbef0dc770be68dba795718.setContent(html_5a1e75f15ba67dd8b745f1c9ab1ff17e);
+            
+        
+
+        marker_ee11cbecf303189b6faad83f5a449925.bindPopup(popup_4895436cffbef0dc770be68dba795718)
+        ;
+
+        
+    
+    
+            marker_ee11cbecf303189b6faad83f5a449925.bindTooltip(
+                `<div>
+                     Discount: 12.79 %
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f0973d933b7220004f07bd6d6d80a09e = L.marker(
+                [40.69839895, -73.98068914],
+                {}
+            ).addTo(map_fdd7dd0df6e4ecc1c7ded1da3d9ac6ff);
+        
+    
+            var icon_aa2024024dc365f5c802987dcb62fcef = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f0973d933b7220004f07bd6d6d80a09e.setIcon(icon_aa2024024dc365f5c802987dcb62fcef);
+        
+    
+        var popup_c6d7ee629a9ee5972a6bc5f2b99c5584 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_02135be6a8ad0d686070eb38f2f812c7 = $(`<div id="html_02135be6a8ad0d686070eb38f2f812c7" style="width: 100.0%; height: 100.0%;">discount: 5: Nassau St & Navy St</div>`)[0];
+                popup_c6d7ee629a9ee5972a6bc5f2b99c5584.setContent(html_02135be6a8ad0d686070eb38f2f812c7);
+            
+        
+
+        marker_f0973d933b7220004f07bd6d6d80a09e.bindPopup(popup_c6d7ee629a9ee5972a6bc5f2b99c5584)
+        ;
+
+        
+    
+    
+            marker_f0973d933b7220004f07bd6d6d80a09e.bindTooltip(
+                `<div>
+                     Discount: 12.78 %
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a77ed7389c5804890c91a04dbc077ac3 = L.marker(
+                [40.6910363749, -73.992010653],
+                {}
+            ).addTo(map_fdd7dd0df6e4ecc1c7ded1da3d9ac6ff);
+        
+    
+            var icon_755a9810c1355a1c655c44e2ddcc760b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a77ed7389c5804890c91a04dbc077ac3.setIcon(icon_755a9810c1355a1c655c44e2ddcc760b);
+        
+    
+        var popup_52edd1f5b55887c7176f79743666c835 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f43cdbdecb0951bac700e40824fe9ec1 = $(`<div id="html_f43cdbdecb0951bac700e40824fe9ec1" style="width: 100.0%; height: 100.0%;">discount: 6: Schermerhorn St & Court St</div>`)[0];
+                popup_52edd1f5b55887c7176f79743666c835.setContent(html_f43cdbdecb0951bac700e40824fe9ec1);
+            
+        
+
+        marker_a77ed7389c5804890c91a04dbc077ac3.bindPopup(popup_52edd1f5b55887c7176f79743666c835)
+        ;
+
+        
+    
+    
+            marker_a77ed7389c5804890c91a04dbc077ac3.bindTooltip(
+                `<div>
+                     Discount: 12.24 %
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b326f2c1b418cbe1be0e167d487c1386 = L.marker(
+                [40.69608941, -73.97803415],
+                {}
+            ).addTo(map_fdd7dd0df6e4ecc1c7ded1da3d9ac6ff);
+        
+    
+            var icon_a52d7eb78b393682f2f5cc73a56d5e92 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b326f2c1b418cbe1be0e167d487c1386.setIcon(icon_a52d7eb78b393682f2f5cc73a56d5e92);
+        
+    
+        var popup_3304b4adaba1cda5f6cea1ea3cde6129 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6b3db5ce20757e8651c2c18d0a79d673 = $(`<div id="html_6b3db5ce20757e8651c2c18d0a79d673" style="width: 100.0%; height: 100.0%;">discount: 7: Park Ave & St Edwards St</div>`)[0];
+                popup_3304b4adaba1cda5f6cea1ea3cde6129.setContent(html_6b3db5ce20757e8651c2c18d0a79d673);
+            
+        
+
+        marker_b326f2c1b418cbe1be0e167d487c1386.bindPopup(popup_3304b4adaba1cda5f6cea1ea3cde6129)
+        ;
+
+        
+    
+    
+            marker_b326f2c1b418cbe1be0e167d487c1386.bindTooltip(
+                `<div>
+                     Discount: 11.33 %
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2e661983ff41c79cc69c9308be14fd17 = L.marker(
+                [40.699569, -73.979827],
+                {}
+            ).addTo(map_fdd7dd0df6e4ecc1c7ded1da3d9ac6ff);
+        
+    
+            var icon_901823d028f0614c2f5343b6dcf95b3d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2e661983ff41c79cc69c9308be14fd17.setIcon(icon_901823d028f0614c2f5343b6dcf95b3d);
+        
+    
+        var popup_4839869af859143262d45dc343639552 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4124c1203ac80aca892b6a23954a9bda = $(`<div id="html_4124c1203ac80aca892b6a23954a9bda" style="width: 100.0%; height: 100.0%;">discount: 8: Sands St Gate</div>`)[0];
+                popup_4839869af859143262d45dc343639552.setContent(html_4124c1203ac80aca892b6a23954a9bda);
+            
+        
+
+        marker_2e661983ff41c79cc69c9308be14fd17.bindPopup(popup_4839869af859143262d45dc343639552)
+        ;
+
+        
+    
+    
+            marker_2e661983ff41c79cc69c9308be14fd17.bindTooltip(
+                `<div>
+                     Discount: 10.34 %
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ba4a2865240654af948b6acbdeb723e0 = L.marker(
+                [40.700119, -73.9862],
+                {}
+            ).addTo(map_fdd7dd0df6e4ecc1c7ded1da3d9ac6ff);
+        
+    
+            var icon_a10de2b67b93728049880b59463fa709 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ba4a2865240654af948b6acbdeb723e0.setIcon(icon_a10de2b67b93728049880b59463fa709);
+        
+    
+        var popup_8f649bf5674a5a820b5c10be01198a73 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_501b6679bbcf03a7da4ac93fbbe2f322 = $(`<div id="html_501b6679bbcf03a7da4ac93fbbe2f322" style="width: 100.0%; height: 100.0%;">discount: 9: Sands St & Jay St</div>`)[0];
+                popup_8f649bf5674a5a820b5c10be01198a73.setContent(html_501b6679bbcf03a7da4ac93fbbe2f322);
+            
+        
+
+        marker_ba4a2865240654af948b6acbdeb723e0.bindPopup(popup_8f649bf5674a5a820b5c10be01198a73)
+        ;
+
+        
+    
+    
+            marker_ba4a2865240654af948b6acbdeb723e0.bindTooltip(
+                `<div>
+                     Discount: 8.16 %
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b83a59155869bd2915792d1dc5a80e6f = L.marker(
+                [40.689888, -73.981013],
+                {}
+            ).addTo(map_fdd7dd0df6e4ecc1c7ded1da3d9ac6ff);
+        
+    
+            var icon_cc3da98be49fda65cc04eea0241cf9e2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b83a59155869bd2915792d1dc5a80e6f.setIcon(icon_cc3da98be49fda65cc04eea0241cf9e2);
+        
+    
+        var popup_5c7aeabf7c588f7e2868932507609abe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c7323716aaa187615bc77f15ec9d4365 = $(`<div id="html_c7323716aaa187615bc77f15ec9d4365" style="width: 100.0%; height: 100.0%;">discount: 10: DeKalb Ave & Hudson Ave</div>`)[0];
+                popup_5c7aeabf7c588f7e2868932507609abe.setContent(html_c7323716aaa187615bc77f15ec9d4365);
+            
+        
+
+        marker_b83a59155869bd2915792d1dc5a80e6f.bindPopup(popup_5c7aeabf7c588f7e2868932507609abe)
+        ;
+
+        
+    
+    
+            marker_b83a59155869bd2915792d1dc5a80e6f.bindTooltip(
+                `<div>
+                     Discount: 6.58 %
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
